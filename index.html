@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Barrinha Recebimento</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+    }
+
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      background: #000;
+      padding: 10px 0;
+    }
+
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 12s linear infinite;
+      color: white;
+      font-size: 20px;
+      font-family: monospace;
+      font-style: italic;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee-container">
+    <div class="marquee">
+      📦 Recebimento em andamento – confira as agendas do dia! 🕒 📦 Recebimento em andamento – confira as agendas do dia! 🕒
+    </div>
+  </div>
+</body>
+</html>
